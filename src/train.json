@@ -1,0 +1,35 @@
+{
+    "train_data":"../mnist/train-images-idx3-ubyte",
+    "train_label":"../mnist/train-labels-idx1-ubyte",
+    "test_data":"../mnist/t10k-images-idx3-ubyte",
+    "test_label":"../mnist/t10k-labels-idx1-ubyte",
+    "max_iter":50,
+    "pretrain_iter":5,
+    "numOfLayers":3,
+    "learning_rate":0.2,
+    "learning_rate_decay":0.98,
+    "weight_decay":0.00001,
+    "epsilon":0.3,
+    "activateType":1,
+    "batchSize":25,
+    "preTrain_batchSize":25,
+    "preTrain":1,
+    "beta":0.4,
+    "momentum":0.5,
+    "lo":0.05
+    "Layers": [
+        {
+            "inputNum":784,
+            "outputNum":800
+        },
+        {
+            "inputNum":800,
+            "outputNum":10
+        },
+        {
+            "inputNum":10,
+            "outputNum":10
+        }
+    ]
+
+}
